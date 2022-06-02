@@ -1,0 +1,26 @@
+<html>
+<head><Title>BMI Calculator</Title></head>
+<body>
+    <p>Healthy BMI is b/w 19 to 25</p>
+    <input type="text" id="height" placeholder="Height"><br>
+    <input type="text" id="weight" placeholder="Weight"><br>
+    <input type="text" id="value" placeholder="Value"><br>
+    <input type="button" value="Calculate" onclick="result()">
+<script>
+
+function result()
+{
+    var height = document.getElementById('height').value;
+    var weight = document.getElementById('weight').value;
+
+    height = height * 12;
+    height = height * 0.025;
+
+    var value = weight / Math.pow(height,2);
+
+    document.getElementById('value').value = Math.round(value);
+}
+
+</script>
+</body>
+</html>

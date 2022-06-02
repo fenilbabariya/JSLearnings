@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scope Chain</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var x = 0;
+	var y1 = "This is y1";
+	document.write(x + "<br>");
+
+	f1();
+	function f1()
+	{
+		var f1 = 'This is f1';
+		var y2 = 'This is y2';
+		document.write(x + "<br>");
+	
+		f2();
+		function f2()
+		{
+			var f2 = 'This is f2';
+			var y3 = 'This is y3';
+			document.write(x + "<br>");
+
+			f3();
+			function f3()
+			{
+				var f3 = 'This is f3';
+				var y4 = 'This is y4';
+				document.write(x + "<br>");
+
+				// Climb up scope chain
+				document.write(y4 + "<br>");
+				document.write(y3 + "<br>");
+				document.write(y2 + "<br>");
+				document.write(y1 + "<br>");
+			}
+		}
+	}
+</script>
+</body>
+</html>

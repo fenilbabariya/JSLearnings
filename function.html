@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Function</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    add();
+    sum(10, 30);
+
+    var a = mul(10, 40);
+    document.write("Multiplication is: "+a);
+
+    //Function without parameter
+    function add(){
+        var a = 10;
+        var b = 10;
+        var add = a + b;
+        document.write("Sum is: "+add+"<br>");
+    }
+    
+    //Function with parameter
+    function sum(a,b){
+        var add = a + b;
+        document.write("Sum is: "+add+"<br>");
+    }
+    //Function with return and parameter
+    function mul(a,b){
+        var add = a + b;
+        return add;
+    }
+
+</script>
+
+</body>
+</html>

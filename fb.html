@@ -1,0 +1,47 @@
+<html>
+<head><title>Facebook</title></head>
+<body>
+
+<script>
+
+let database = [
+    {
+        uname: 'fenil',
+        pass: '1234',
+    }
+];
+
+let status = [
+    {
+        name: 'Fenil Babariya 1',
+        status: 'Student 1',
+    },
+    {
+        name: 'Fenil Babariya 2',
+        status: 'Student 2',
+    }
+];
+
+const uname = prompt('Enter Username');
+const pass = prompt('Enter Password');
+
+function login(user,psw)
+{
+    if(user === database[0].uname && psw === database[0].pass)
+    {
+        // console.log(status);
+        for(let val of status){
+            console.log(val);
+        }
+    }else
+    {
+        alert('Username or Password is incorrect');
+    }
+}
+
+login(uname,pass);
+
+</script>
+
+</body>
+</html>

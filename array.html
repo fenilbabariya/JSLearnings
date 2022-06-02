@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>
+        Array
+    </title>
+</head>
+<body>
+
+<script>
+
+    var arr = ["Fenil","Babariya","Patel",12,113];
+    document.write(arr[0]+"<br>");
+    document.write(arr[1]+"<br>");
+    document.write(arr[4]+"<br>");
+    document.write(arr[2]+"<br>");
+    document.write(arr+"<br>");
+
+    var arr2 = new Array('zzz',"Fenil","Babariya","Patel");
+    var arr3 = new Array(12,113,45,24,65);
+    document.write(arr2+"<br>");
+    document.write("Length of Array is: "+arr2.length+"<br>");
+    arr3.sort();
+    arr2.push('Hello');
+    arr2.sort();
+    document.write("Sorting of Array is: "+arr3+"<br>");
+    document.write("Sorting of Array is: "+arr2+"<br>");
+    arr2.pop();
+    document.write("Array is: "+arr2+"<br>");
+    arr2.shift();
+    document.write("Array is: "+arr2+"<br>");
+    arr2.unshift('Heluuu');
+    document.write("Array is: "+arr2+"<br>");
+    arr2.reverse();
+    document.write("Array is: "+arr2+"<br>");
+    var check = Array.isArray(arr2);
+    document.write(check+"<br>");
+    document.write(arr2.concat(arr3)+"<br>");
+    document.write(arr2.indexOf("Fenil")+"<br>");
+
+</script>
+
+</body>
+</html>

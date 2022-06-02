@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Document Object Model</title>
+</head>
+<body>
+    
+    <p id='fenil'> Fenil </p>
+    <p class='babariya'> Babariya 1</p>
+    <p class='babariya'> Babariya 2</p>
+    <p class='babariya'> Babariya 3</p>
+<!-- 
+    <h1>
+        <span id="d">D: Document</span>
+        <span id="o">O: object</span>
+        <span id="m">M: Modal</span>
+    </h1>
+    <h2>guyggy guigu gyuguygu gyugyug yugyuguygy giuguguygu gugyugyu yuyggugu tfufif oufuyfuf iufuf</h2>
+    <p>giougtuu uuufufu fufugubi tyuyvjhboh tyuygkbuhiu glkpuhyjg, kjhigy</p>
+    <img src='1.png' style="margin: auto; display: block;"> -->
+    <script>
+
+        var a = document.getElementById('fenil').innerHTML;
+        var b = document.getElementsByClassName('babariya')[1].innerText;
+        var c = document.getElementsByTagName('p');
+        var d = document.querySelector('p').innerHTML;
+        document.write(a);
+        document.write(b);
+        document.write(c);
+        document.write(d);
+        console.log(c);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!-- switch(expression)
+{
+    case constant: code;
+                    break;
+    case constant: code;
+                    break;
+} -->
+<html>
+    <head>
+        <title>
+            Switch Statement
+        </title>
+    </head>
+<body>
+    <h3>Enter Your Choice</h3>
+    <ul>
+        <li>Add</li>
+        <li>Sub</li>
+        <li>Mul</li>
+        <li>Div</li>
+    </ul>
+    <br>
+    <form>
+        <input type="text" name="" id="Choice">
+        <br>
+        <button onclick="myfun()">Click Me</button>
+    </form>
+<script type="text/javascript">
+    function myfun()
+    {
+        var choice = document.getElementById("Choice").value;
+        var a = 20;
+        var b = 10;
+        var c;
+        switch(choice)
+        {
+            case "Add": c = a + b;
+            document.write("Addition is: "+c);
+            break;
+            
+            case "Sub": c = a - b;
+            document.write("Substraction is: "+c);
+            break;
+
+            case "Mul": c = a * b;
+            document.write("Multiplication is: "+c);
+            break;
+            
+            case "Div": c = a / b;
+            document.write("Division is: "+c);
+            break;
+            
+            default: alert("Not a valid input!");
+
+        }
+    }
+</script>
+</body>
+</html>

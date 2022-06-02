@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Print Module</title>
+</head>
+<body>
+	<div id="divone">
+		This is Div One
+		<button onclick="myfun('divone')">Div One</button>
+	</div>
+	<div id="divtwo">
+		This is Div Two
+		<button onclick="myfun('divtwo')">Div Two</button>
+	</div>
+	<div id="divthree">
+		This is Div Three
+		<button onclick="myfun('divthree')">Div Three</button>
+	</div>
+	<button onclick="wholePage()">Whole Page</button>
+<script type="text/javascript">
+	
+	function wholePage()
+	{
+		window.print();
+	}
+
+	function myfun(value)
+	{
+		var backup = document.body.innerHTML;
+		var divcontent = document.getElementById(value).innerHTML;
+		document.body.innerHTML = divcontent;
+		window.print();
+		document.body.innerHTML = backup;
+	}
+
+</script>
+</body>
+</html>

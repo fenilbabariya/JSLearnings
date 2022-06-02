@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dates</title>
+</head>
+<body>
+<script type="text/javascript">
+    var date = new Date();
+    var date2 = new Date();
+    document.write(date+"<br>");
+
+    var month = date.getUTCMonth() + 1;
+    var day = date.getUTCDate();
+    var year = date.getUTCFullYear();
+    
+    date2.setMonth(9);
+    date2.setDate(04);
+    date2.setFullYear(2000);
+
+    document.write(year + "/"+ month + "/" + day + "<br>");
+    document.write(date2);
+
+
+</script>
+</body>
+</html>

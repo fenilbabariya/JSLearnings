@@ -1,0 +1,23 @@
+<html>
+<head>
+    <Title>Real Time Change</Title>
+</head>
+<body>
+    <h2>Real Time Change</h2>
+    <input type="text" id="reverse" onkeyup="reverseString()">
+    <input type="text" id="result">
+<script>
+    function reverseString()
+    {
+        var str = document.getElementById('reverse').value;
+        var str2 = "";
+
+        for (var i = str.length-1; i >= 0; i--)
+        {
+            str2 += str[i];
+        }
+        document.getElementById('result').value = str2;
+    }
+</script>
+    </body>
+</html>

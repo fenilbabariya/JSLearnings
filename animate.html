@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<link href="min.css" rel="stylesheet" />
+	<link href="animate.min.css" rel="stylesheet" />
+	<script src="js/bundle.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/min.js"></script>
+</head>
+<body>
+
+	<div class="card animate__heartBeat" id="one" style="width: 18rem;">
+		<img src="..." class="card-img-top" alt="...">
+		<div class="card-body">
+		  <h5 class="card-title">Card title</h5>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	  </div>
+	  
+	  <div class="card animate__heartBeat" id="two" style="width: 18rem;">
+		<img src="..." class="card-img-top" alt="...">
+		<div class="card-body">
+		  <h5 class="card-title">Card title</h5>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	  </div>
+	  <div class="card animate__heartBeat" id="three" style="width: 18rem;">
+		<img src="..." class="card-img-top" alt="...">
+		<div class="card-body">
+		  <h5 class="card-title">Card title</h5>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	  </div>
+	  <div class="card animate__heartBeat" id="four" style="width: 18rem;">
+		<img src="..." class="card-img-top" alt="...">
+		<div class="card-body">
+		  <h5 class="card-title">Card title</h5>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	  </div><div class="card animate__heartBeat" id="five" style="width: 18rem;">
+		<img src="..." class="card-img-top" alt="...">
+		<div class="card-body">
+		  <h5 class="card-title">Card title</h5>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	  </div>
+	  <div class="card animate__heartBeat" id="six" style="width: 18rem;">
+		<img src="..." class="card-img-top" alt="...">
+		<div class="card-body">
+		  <h5 class="card-title">Card title</h5>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	  </div>
+	  
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			
+			var positiontop = $(document).scrollTop();
+			console.log(positiontop);
+
+			if(positiontop > 10)
+			{
+				$('#one').addClass('animate__heartBeat');
+				$('#two').addClass('animate__heartBeat');
+				$('#three').addClass('animate__heartBeat');
+				$('#four').addClass('animate__heartBeat');
+				$('#five').addClass('animate__heartBeat');
+				$('#six').addClass('animate__heartBeat');
+			}
+
+		});
+	});
+	
+</script>
+</body>
+</html>

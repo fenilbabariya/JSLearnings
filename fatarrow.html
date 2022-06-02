@@ -1,0 +1,31 @@
+<html>
+    <head><title>Fat Arrow</title></head>
+<body>
+    
+<script>
+
+    function add()
+    {
+        let a = 5;
+        let b = 10;
+        document.write(`The sum of ${a} and ${b} is ${a + b}`);
+    }
+
+// add();
+const funadd = () => {
+    let a = 5;
+    let b = 10;
+    document.write(`The sum of ${a} and ${b} is ${a + b}`);
+}
+
+const funadd2 = (x=1,y=1) => {
+    document.write(`The sum of ${x} and ${y} is ${x + y}`);
+}
+
+funadd2(3,4);
+funadd2(); //Default Value
+funadd();
+
+</script>
+</body>
+</html>
